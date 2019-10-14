@@ -1,0 +1,219 @@
+html{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+
+div.background-image {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 100;
+
+  display: block;
+  background-image: url('dp.jpg');
+  width: 1200px;
+  height: 800px;
+
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+
+body{
+    margin:0px;
+    padding:0px;
+    font-family :'나눔바른고딕', 'Malgun Gothic', sans-serif;
+    font-weight:900;
+    color:rgb(212, 212, 212);
+    background-color: black;
+    text-align:center;
+    font-size:30px;
+    display:inline-block;
+    overflow:hidden;
+    /*
+    background-image: url("body_bg.png");
+    background-attachment: fixed;
+    background-size: 100%;
+    */
+}
+div#top_bar{
+    margin:0px;
+    padding-top :20px;
+    z-index: 12;
+    scroll-behavior: unset;
+    position: fixed;
+    top:0px;
+    width:100%;
+    height:5%;
+    text-align: center;
+    overflow:hidden;
+}
+div#top_bar p{
+    opacity: 0.3;
+    color:#BABABA;
+    display:inline;
+    margin:0px;
+    padding-top:20px;
+    padding-left:20px;
+    padding-right:20px;
+}
+div#top_bar p:hover{
+    animation: select 0.3s 0s 1 ease-in-out;
+    background: linear-gradient(to right, #a8a8a7, #f7ba4a);
+    opacity:1;
+  -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+div#next_page{
+    animation:  bounce 3s 0s infinite ease-in-out ;
+    color:#BABABA;
+    position: relative;
+    display:block;
+    margin:0px;
+    padding:0px;
+    z-index:11;
+    text-align:center;
+    font-size:200px;
+    line-height:0.5em;
+    height:10vh;
+}
+div#next_page box{
+position:relative;
+left:50%;
+top:80%;
+width:240px;
+height:20px;
+background-color:#BABABA;
+transform:translateX(-50%);
+display:block;
+}
+div#next_page:hover{
+    animation: select 0.3s 0s 1 ease-in-out;
+    opacity:1;
+}
+div#next_page p{
+    color:#BABABA;
+    display:inline;
+    margin:0px;
+    padding-top:20px;
+    padding-left:20px;
+    padding-right:20px;
+}
+div#next_page p:hover{
+    background: linear-gradient(to bottom, #fbcac9, #8ca6ce);
+  -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+img.content_img{
+    display:block;
+    float:left;
+    margin:10px;
+    max-height:70vh;
+    max-width:50vw;
+    position: relative;
+    top:60%;
+    transform:translateY(-50%);
+}
+div.paragraph{
+    margin:10px;
+    padding:0px;
+    display:block;
+    text-align: center;
+    float:left;
+    line-height:1.4em;
+    overflow: hidden;
+    max-width:40vw;
+    position: relative;
+    top:50%;
+    transform:translateY(-50%);
+}
+div.paragraph strong{
+    font-weight: 1000;
+    background: linear-gradient(to right, rgb(250, 222, 147), rgb(255, 156, 222));
+  -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+div.paragraph h1{
+    margin:0px;
+    padding:0px;
+    line-height:2em;
+    font-size:2.5em;
+}
+div.paragraph h1.gold{
+    background: linear-gradient(to right, #a8a8a7, #f7ba4a);
+  -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+div.paragraph h1.purple{
+    background: linear-gradient(to right, #fbcac9, #8ca6ce);
+  -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+div.content{
+    z-index:10;
+    display: inline-block;
+    box-sizing: border-box;
+    height:90vh;
+}
+
+
+@keyframes fadeOut {
+  from {
+    opacity: 0.3;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes select{
+    from{
+        opacity: 0.3;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes  bounce{
+  0% {
+      opacity: 0.0;
+      transform:translateY(0);
+  }
+  20% {
+      transform:translateY(-5px);
+      opacity: 0.3;
+  }
+  40%{
+      transform:translateY(0);
+  }
+  55% {
+      transform:translateY(-3px);
+  }
+  70%{
+      transform:translateY(0);
+  }
+  80% {
+      transform:translateY(-2px);
+  }
+  90%{
+      transform:translateY(0);
+      opacity: 0;
+  }
+  100%{
+      opacity: 0;
+  }
+}
+
+@keyframes gradiation{
+    from{
+    }
+    to{
+    }
+}
